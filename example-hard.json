@@ -1,0 +1,36 @@
+{
+  "title" : "Testing Component",
+  "tabs" : [{
+      "name" : "General",
+      "controls" : [{
+          "type" : "textbox",
+          "label" : "My Field 1",
+          "defaultValue" : "textbox",
+          "hint" : "Fill this textbox with the right value!"
+        }
+      ]
+    },
+    {
+      "name" : "Teste",
+      "controls" : [{
+          "type" : "textbox",
+          "label" : "My Field 1",
+          "defaultValue" : "textbox",
+          "hint" : "Fill this textbox with the right value!"
+        },
+        {
+          "type" : "multifield",
+          "label" : "My multifield",
+          "hint" : "Fill this multifield with the right value!",
+          "controls" : [{
+              "type" : "textbox",
+              "label" : "Testing 1",
+              "defaultValue" : "textbox",
+              "hint" : "Example: 123"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Elements\Tabs\Template.html" />
+    <None Remove="Elements\Tabs\TemplateNavItem.html" />
+    <None Remove="Elements\Tabs\TemplateTabContent.html" />
+    <None Remove="Elements\Multifield\Template.html" />
+    <None Remove="Elements\Window\Template.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Elements\Tabs\TemplateTabContent.html" />
+    <EmbeddedResource Include="Elements\Tabs\TemplateNavItem.html" />
+    <EmbeddedResource Include="Elements\Tabs\Template.html" />
+    <EmbeddedResource Include="Elements\TextBox\Template.html" />
+    <EmbeddedResource Include="Elements\Multifield\Template.html" />
+    <EmbeddedResource Include="Elements\Window\Template.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InterfaceBuilder.Engine.Interface\InterfaceBuilder.Engine.Interface.csproj" />
+    <ProjectReference Include="..\InterfaceBuilder.Model\InterfaceBuilder.Model.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+{
+  "title" : "Search Component",
+  "controls" : [{
+        "type" : "textbox",
+        "label" : "My Field 1",
+        "defaultValue" : "Hey, this is a textbox!",
+        "hint" : "Fill this textbox with the right value!"
+    },
+    {
+          "type" : "textbox",
+          "label" : "My Field 2",
+          "defaultValue" : "Hey, this is a textbox!",
+          "hint" : "Fill this textbox with the right value!"
+    },
+    {
+          "type" : "textbox",
+          "label" : "My Field 3",
+          "hint" : "Fill this textbox with the right value!"
+    }
+  ]
+}
