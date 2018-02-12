@@ -68,7 +68,15 @@ namespace InterfaceBuilder.Engine
                         Elements.Add(control);
                     }
                     break;
-
+                case "checkbox":
+                    if (Elements.Exists(t => t.GetType().Name.Equals(type, StringComparison.CurrentCultureIgnoreCase)))
+                        control = Elements.Find(t => t.GetType().Name.Equals(type, StringComparison.CurrentCultureIgnoreCase));
+                    else
+                    {
+                        control = new Elements.Checkbox();
+                        Elements.Add(control);
+                    }
+                    break;
                 default:
                     break;
             }
