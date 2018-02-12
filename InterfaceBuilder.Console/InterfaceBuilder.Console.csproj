@@ -15,4 +15,8 @@
     <ProjectReference Include="..\InterfaceBuilder.Engine\InterfaceBuilder.Engine.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Template\" />
+  </ItemGroup>
+
 </Project>

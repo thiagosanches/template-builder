@@ -37,7 +37,7 @@ namespace InterfaceBuilder.Console
             try
             {
                 string templateContent = File.ReadAllText(filePath);
-                File.WriteAllText(@"C:\Users\Thiago\Downloads\testing.html", 
+                File.WriteAllText(@"C:\Users\Thiago\Downloads\testing.html",
                     templateContent.Replace("[WINDOW]", window, System.StringComparison.InvariantCulture));
             }
             catch (System.Exception ex)
