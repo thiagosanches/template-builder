@@ -74,4 +74,5 @@ There are a lot of works that need to be done, feel free to fork it :).
   ]
 }
 ```
-![Example 1](https://github.com/thiagosanches/template-builder/blob/master/Help/example2.PNG)
+
+![Example 2](https://github.com/thiagosanches/template-builder/blob/master/Help/example2.PNG)
