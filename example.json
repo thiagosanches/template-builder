@@ -1,5 +1,5 @@
 {
-  "title" : "Search Component",
+  "title" : "Test Component",
   "controls" : [{
         "type" : "textbox",
         "label" : "My Field 1",

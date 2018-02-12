@@ -1,5 +1,5 @@
 {
-  "title" : "Testing Component",
+  "title" : "Test Component",
   "tabs" : [{
       "name" : "General",
       "controls" : [{
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "name" : "Teste",
+      "name" : "My Tab",
       "controls" : [{
           "type" : "textbox",
           "label" : "My Field 1",
@@ -24,8 +24,8 @@
           "hint" : "Fill this multifield with the right value!",
           "controls" : [{
               "type" : "textbox",
-              "label" : "Testing 1",
-              "defaultValue" : "textbox",
+              "label" : "My field",
+              "defaultValue" : "",
               "hint" : "Example: 123"
             }
           ]
