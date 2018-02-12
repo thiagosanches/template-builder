@@ -6,6 +6,8 @@ Intentionally this application was built to support the following elements:
 * Textbox
 * Multifields
 * Tabs
+* Combobox
+* Checkbox
 
 There are a lot of works that need to be done, feel free to fork it :).
 
