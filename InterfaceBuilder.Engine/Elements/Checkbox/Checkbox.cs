@@ -7,12 +7,12 @@ namespace InterfaceBuilder.Engine.Elements
 {
     internal class Checkbox : IElement
     {
-        public string Build(object element)
+        public string Build(object obj)
         {
-            InterfaceBuilder.Model.Window window = (InterfaceBuilder.Model.Window)element;
+            InterfaceBuilder.Model.Element element = (InterfaceBuilder.Model.Element)obj;
             string template = GetTemplate();
 
-            return string.Format(template, window.Title);
+            return string.Format(template, element.Label, element.Hint);
         }
 
         private string GetTemplate()
