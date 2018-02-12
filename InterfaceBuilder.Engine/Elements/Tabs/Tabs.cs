@@ -22,8 +22,9 @@ namespace InterfaceBuilder.Engine.Elements
 
             foreach (var tab in tabs)
             {
-                navItems.AppendFormat(navItemTemplate, tab.Title);
-                string tabContent = string.Format(GetTemplate("TemplateTabContent"), tab.Title);
+                string tabId = tab.Title.Replace(" ", "-");
+                navItems.AppendFormat(navItemTemplate, tab.Title, tabId);
+                string tabContent = string.Format(GetTemplate("TemplateTabContent"), tabId);
 
                 foreach (var element in tab.Elements)
                 {
