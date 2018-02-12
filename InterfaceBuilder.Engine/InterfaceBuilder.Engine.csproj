@@ -9,6 +9,7 @@
     <None Remove="Elements\Tabs\TemplateNavItem.html" />
     <None Remove="Elements\Tabs\TemplateTabContent.html" />
     <None Remove="Elements\Multifield\Template.html" />
+    <None Remove="Elements\Combobox\Template.html" />
     <None Remove="Elements\Window\Template.html" />
   </ItemGroup>
 
@@ -18,6 +19,7 @@
     <EmbeddedResource Include="Elements\Tabs\Template.html" />
     <EmbeddedResource Include="Elements\TextBox\Template.html" />
     <EmbeddedResource Include="Elements\Multifield\Template.html" />
+    <EmbeddedResource Include="Elements\Combobox\Template.html" />
     <EmbeddedResource Include="Elements\Window\Template.html" />
   </ItemGroup>
 
