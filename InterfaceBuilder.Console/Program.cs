@@ -11,7 +11,7 @@ namespace InterfaceBuilder.Console
         {
             Builder builder = new Builder();
 
-            Window window = LoadFromFile(@"C:\Users\Thiago\repositories\interfacebuilder\example.json");
+            Window window = LoadFromFile(@"C:\Users\Thiago\repositories\interfacebuilder\example-hard.json");
             InsertWindowIntoTemplate(builder.Build(window), @"C:\Users\Thiago\Downloads\Starter Template for Bootstrap.html");
         }
 
