@@ -27,7 +27,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 `dotnet build`
 
-# Running
+## Running
 
 ```
 dotnet InteraceBuilder.Console.dll my-input.json my-output.html
