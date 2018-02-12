@@ -8,6 +8,7 @@ Intentionally this application was built to support the following elements:
 * Tabs
 
 There are a lot of works that need to be done, feel free to fork it :).
+I'm working to support more elements and refactoring some workaround codes.
 
 # Examples
 ```json
@@ -33,6 +34,8 @@ There are a lot of works that need to be done, feel free to fork it :).
   ]
 }
 ```
+
+![Example 1](https://github.com/thiagosanches/template-builder/blob/master/Help/example1.PNG)
 
 ```json
 {
@@ -72,3 +75,5 @@ There are a lot of works that need to be done, feel free to fork it :).
   ]
 }
 ```
+
+![Example 2](https://github.com/thiagosanches/template-builder/blob/master/Help/example2.PNG)
