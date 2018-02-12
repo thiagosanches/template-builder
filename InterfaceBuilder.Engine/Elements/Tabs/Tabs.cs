@@ -22,9 +22,8 @@ namespace InterfaceBuilder.Engine.Elements
 
             foreach (var tab in tabs)
             {
-                string tabId = tab.Title.Replace(" ", "_");
-                navItems.AppendFormat(navItemTemplate, tab.Title, tabId);
-                string tabContent = string.Format(GetTemplate("TemplateTabContent"), tabId);
+                navItems.AppendFormat(navItemTemplate, tab.Title);
+                string tabContent = string.Format(GetTemplate("TemplateTabContent"), tab.Title);
 
                 foreach (var element in tab.Elements)
                 {
