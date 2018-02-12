@@ -8,15 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Template\Template.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Template\Template.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\InterfaceBuilder.Engine\InterfaceBuilder.Engine.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Template\" />
   </ItemGroup>
 
 </Project>
