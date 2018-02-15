@@ -86,6 +86,15 @@ namespace InterfaceBuilder.Engine
                         Elements.Add(control);
                     }
                     break;
+                case "image":
+                    if (Elements.Exists(t => t.GetType().Name.Equals(type, StringComparison.CurrentCultureIgnoreCase)))
+                        control = Elements.Find(t => t.GetType().Name.Equals(type, StringComparison.CurrentCultureIgnoreCase));
+                    else
+                    {
+                        control = new Elements.Image();
+                        Elements.Add(control);
+                    }
+                    break;
                 default:
                     break;
             }

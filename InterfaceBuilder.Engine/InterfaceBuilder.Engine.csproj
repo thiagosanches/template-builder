@@ -12,6 +12,7 @@
     <None Remove="Elements\Combobox\Template.html" />
     <None Remove="Elements\Checkbox\Template.html" />
     <None Remove="Elements\ColorPicker\Template.html" />
+    <None Remove="Elements\Image\Template.html" />
     <None Remove="Elements\Window\Template.html" />
   </ItemGroup>
 
@@ -20,6 +21,7 @@
     <EmbeddedResource Include="Elements\Tabs\TemplateNavItem.html" />
     <EmbeddedResource Include="Elements\Tabs\Template.html" />
     <EmbeddedResource Include="Elements\ColorPicker\Template.html" />
+    <EmbeddedResource Include="Elements\Image\Template.html" />
     <EmbeddedResource Include="Elements\TextBox\Template.html" />
     <EmbeddedResource Include="Elements\Multifield\Template.html" />
     <EmbeddedResource Include="Elements\Combobox\Template.html" />
