@@ -95,7 +95,16 @@ namespace InterfaceBuilder.Engine
                         Elements.Add(control);
                     }
                     break;
-                default:
+				case "pathfield":
+					if (Elements.Exists(t => t.GetType().Name.Equals(type, StringComparison.CurrentCultureIgnoreCase)))
+						control = Elements.Find(t => t.GetType().Name.Equals(type, StringComparison.CurrentCultureIgnoreCase));
+					else
+					{
+						control = new Elements.PathField();
+						Elements.Add(control);
+					}
+					break;
+				default:
                     break;
             }
 

@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Elements\PathField\Template.html" />
     <None Remove="Elements\Tabs\Template.html" />
     <None Remove="Elements\Tabs\TemplateNavItem.html" />
     <None Remove="Elements\Tabs\TemplateTabContent.html" />
@@ -17,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Elements\PathField\Template.html" />
     <EmbeddedResource Include="Elements\Tabs\TemplateTabContent.html" />
     <EmbeddedResource Include="Elements\Tabs\TemplateNavItem.html" />
     <EmbeddedResource Include="Elements\Tabs\Template.html" />

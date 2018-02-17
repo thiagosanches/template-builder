@@ -8,6 +8,9 @@ Intentionally this application was built to support the following elements:
 * Tabs
 * Combobox
 * Checkbox
+* Color Picker
+* Image
+* Path Field
 
 It's easy to support a new element, you have to follow the existing structure to add it and change the Factory to know that there is a new element that could be used.
 
