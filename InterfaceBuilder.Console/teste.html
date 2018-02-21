@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Template Builder</title>
+    <link href="http://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/docs/3.3/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/docs/3.3/examples/starter-template/starter-template.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="http://getbootstrap.com/docs/3.3/assets/js/ie-emulation-modes-warning.js"></script>
+  </head>
+
+  <body>
+    <div class="container" style="max-width:600px;padding:40px 20px;background:#ebeff2">
+      <form class="form-horizontal" role="form">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Search Component
+            <i class="fa fa-window-close pull-right"></i>
+        </div>
+
+        <div class="panel-body">
+            <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#General-Tab" role="tab">General Tab</a>
+</li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="General-Tab" role="tabpanel">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="form-group">
+    <label for="Display component" class="control-label col-sm-3">Display component</label>
+    <div class="col-sm-8">
+        <input type="checkbox" class="form-check-input" id="Display component">
+        <small class="form-text text-muted">Display or not the component</small>
+    </div>
+</div>
+        <div class="form-group">
+	<label for="Search Results Page*" class="control-label col-sm-3">Search Results Page*</label>
+	<div class="col-sm-8">
+		<div class="input-group">
+			<input type="text" class="form-control" id="Search Results Page*">
+			<span class="input-group-addon"><i class="fa fa-search"></i></span>
+		</div>
+		<small class="form-text text-muted">Use a Search Results Page</small>
+	</div>
+</div>
+<div class="form-group">
+    <label for="Query String*" class="control-label col-sm-3">Query String*</label>
+    <div class="col-sm-8">
+        <input type="text" class="form-control" id="Query String*" value="">
+        <small class="form-text text-muted">The same querystring used on Search Results Page</small>
+    </div>
+</div><div class="form-group">
+    <label for="Open in a new window" class="control-label col-sm-3">Open in a new window</label>
+    <div class="col-sm-8">
+        <input type="checkbox" class="form-check-input" id="Open in a new window">
+        <small class="form-text text-muted">Select if the page will open on a new page</small>
+    </div>
+</div><div class="form-horizontal" role="form">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <i class="fa fa-minus-square"></i>
+            Fieldset
+        </div>
+
+        <div class="panel-body">
+            <div class="form-group">
+    <label for="Search icon*" class="control-label col-sm-3">Search icon*</label>
+    <div class="col-sm-8">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div style="text-align: center">
+                    <img src="http://static.sites.yp.com/gfx/freeTextImage/placeholder.png?v=6.5.1.37806" width="160" height="120" /><br />
+                    Drop an image or click to upload.
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="form-group">
+	<label for="Search icon color" class="control-label col-sm-3">Search icon color</label>
+	<div class="col-sm-8">
+		<div class="input-group">
+			<input type="text" class="form-control" id="Search icon color">
+			<span class="input-group-addon"><i class="fa fa-tint"></i></span>
+		</div>
+		<small class="form-text text-muted">Color picker to choose icon color</small>
+	</div>
+</div>
+<div class="form-group">
+	<label for="Search icon hover color" class="control-label col-sm-3">Search icon hover color</label>
+	<div class="col-sm-8">
+		<div class="input-group">
+			<input type="text" class="form-control" id="Search icon hover color">
+			<span class="input-group-addon"><i class="fa fa-tint"></i></span>
+		</div>
+		<small class="form-text text-muted">Color picker to choose icon hover color</small>
+	</div>
+</div>
+<div class="form-group">
+	<label for="Search icon highlight color" class="control-label col-sm-3">Search icon highlight color</label>
+	<div class="col-sm-8">
+		<div class="input-group">
+			<input type="text" class="form-control" id="Search icon highlight color">
+			<span class="input-group-addon"><i class="fa fa-tint"></i></span>
+		</div>
+		<small class="form-text text-muted">Color picker to choose icon highlight color</small>
+	</div>
+</div>
+<div class="form-group">
+	<label for="Background color" class="control-label col-sm-3">Background color</label>
+	<div class="col-sm-8">
+		<div class="input-group">
+			<input type="text" class="form-control" id="Background color">
+			<span class="input-group-addon"><i class="fa fa-tint"></i></span>
+		</div>
+		<small class="form-text text-muted">Color picker to choose background color</small>
+	</div>
+</div>
+<div class="form-group">
+	<label for="Search Placeholder" class="control-label col-sm-3">Search Placeholder</label>
+	<div class="col-sm-8">
+		<div class="input-group">
+			<input type="text" class="form-control" id="Search Placeholder">
+			<span class="input-group-addon"><i class="fa fa-tint"></i></span>
+		</div>
+		<small class="form-text text-muted">A text that will be displayed in the search component</small>
+	</div>
+</div>
+<div class="form-group">
+    <label for="Type" class="control-label col-sm-3">Type</label>
+    <div class="col-sm-8">
+        <select type="select" class="form-control" id="Type">
+            <option>Select one option</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select>
+        <small class="form-text text-muted">Select if it should be animated or fixed. Animated will work only in Navigation Header.</small>
+    </div>
+</div><div class="form-group">
+	<label for="Line color" class="control-label col-sm-3">Line color</label>
+	<div class="col-sm-8">
+		<div class="input-group">
+			<input type="text" class="form-control" id="Line color">
+			<span class="input-group-addon"><i class="fa fa-tint"></i></span>
+		</div>
+		<small class="form-text text-muted">Color picker to choose line color</small>
+	</div>
+</div>
+
+        </div>
+    </div>
+</div></div>
+    </div>
+</div>
+</div>
+            <button type="button" class="btn btn-light">OK</button>
+            <button type="button" class="btn btn-light">Cancel</button>
+        </div>
+    </div>
+</form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="http://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/docs/3.3/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
