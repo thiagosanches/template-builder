@@ -36,8 +36,8 @@ namespace InterfaceBuilder.Engine.Elements
 
                 if (firstItem)
                 {
-                    tabContent = tabContent.Replace("tab-pane active", "tab-pane");
-                    navItemTemplate = navItemTemplate.Replace("nav-item active", "nav-item");
+                    tabContent = tabContent.Replace("tab-pane", "tab-pane active");
+                    navItemTemplate = navItemTemplate.Replace("nav-item", "nav-item active");
                     firstItem = false;
                 }
 
