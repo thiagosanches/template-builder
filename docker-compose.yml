@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  interfacebuilder.webapi:
+    image: interfacebuilder.webapi
+    build:
+      context: .
+      dockerfile: InterfaceBuilder.WebApi/Dockerfile
