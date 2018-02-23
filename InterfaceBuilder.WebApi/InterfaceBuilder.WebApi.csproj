@@ -17,4 +17,10 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\InterfaceBuilder.Engine.Interface\InterfaceBuilder.Engine.Interface.csproj" />
+    <ProjectReference Include="..\InterfaceBuilder.Engine\InterfaceBuilder.Engine.csproj" />
+    <ProjectReference Include="..\InterfaceBuilder.Model\InterfaceBuilder.Model.csproj" />
+  </ItemGroup>
+
 </Project>
