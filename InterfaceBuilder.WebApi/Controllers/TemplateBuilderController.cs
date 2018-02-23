@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace InterfaceBuilder.WebApi.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class TemplateBuilderController : Controller
     {
         // GET api/values
         [HttpGet]
