@@ -1,6 +1,8 @@
 ﻿using InterfaceBuilder.Engine.Interface;
 using InterfaceBuilder.Model;
 using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 using System.Text;
 
 namespace InterfaceBuilder.Engine
@@ -11,7 +13,11 @@ namespace InterfaceBuilder.Engine
         {
             try
             {
-                return RenderWindow(window);
+                string windowContent = RenderWindow(window);
+                string template = GetTemplate();
+
+                return template.Replace("[WINDOW]", windowContent,
+                    System.StringComparison.InvariantCulture);
             }
             catch (System.Exception)
             {
@@ -53,6 +59,20 @@ namespace InterfaceBuilder.Engine
         private string RenderElement(Element element)
         {
             return Factory.GetInstance(element.Type).Build(element);
+        }
+
+        private string GetTemplate()
+        {
+            string template = null;
+            var assembly = typeof(Builder).GetTypeInfo().Assembly;
+
+            using (StreamReader streamReader = new StreamReader(assembly.
+                GetManifestResourceStream("InterfaceBuilder.Engine.Elements.Template.html")))
+            {
+                template = streamReader.ReadToEnd();
+            }
+
+            return template;
         }
     }
 }

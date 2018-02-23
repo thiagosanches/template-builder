@@ -10,7 +10,7 @@ namespace InterfaceBuilder.Console
     {
         static void Main(string[] args)
         {
-            if(args != null &&
+            if (args != null &&
                 args.Length != 2)
             {
                 System.Console.WriteLine("Hey, you have to pass two parameters: <my_input_json> <my_output_template>");
@@ -23,9 +23,7 @@ namespace InterfaceBuilder.Console
             string filePath = args[1];
 
             string windowContent = builder.Build(window);
-            string template = GetTemplate();
-
-            InsertIntoTemplate(windowContent, template, filePath);
+            InsertIntoTemplate(windowContent, filePath);
         }
 
         private static Window LoadFromFile(string filePath)
@@ -45,31 +43,16 @@ namespace InterfaceBuilder.Console
             return window;
         }
 
-        private static void InsertIntoTemplate(string window, string template, string filePath)
+        private static void InsertIntoTemplate(string windowContent, string filePath)
         {
             try
             {
-                File.WriteAllText(filePath, template.Replace("[WINDOW]",
-                    window, System.StringComparison.InvariantCulture));
+                File.WriteAllText(filePath, windowContent);
             }
             catch (System.Exception ex)
             {
                 System.Console.WriteLine(ex.Message);
             }
-        }
-
-        private static string GetTemplate()
-        {
-            string template = null;
-            var assembly = typeof(Program).GetTypeInfo().Assembly;
-
-            using (StreamReader streamReader = new StreamReader(assembly.
-                GetManifestResourceStream("InterfaceBuilder.Console.Template.Template.html")))
-            {
-                template = streamReader.ReadToEnd();
-            }
-
-            return template;
         }
     }
 }

@@ -8,14 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Template\Template.html" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Template\Template.html" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
 
