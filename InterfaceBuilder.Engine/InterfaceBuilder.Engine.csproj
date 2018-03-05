@@ -16,6 +16,7 @@
     <None Remove="Elements\Image\Template.html" />
     <None Remove="Elements\Fieldset\Template.html" />
     <None Remove="Elements\Template.html" />
+    <None Remove="Elements\RichText\Template.html" />
     <None Remove="Elements\Window\Template.html" />
   </ItemGroup>
 
@@ -32,6 +33,7 @@
     <EmbeddedResource Include="Elements\Combobox\Template.html" />
     <EmbeddedResource Include="Elements\Checkbox\Template.html" />
     <EmbeddedResource Include="Elements\Fieldset\Template.html" />
+    <EmbeddedResource Include="Elements\RichText\Template.html" />
     <EmbeddedResource Include="Elements\Window\Template.html" />
   </ItemGroup>
 
