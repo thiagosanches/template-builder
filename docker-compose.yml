@@ -7,4 +7,4 @@ services:
       context: .
       dockerfile: InterfaceBuilder.WebApi/Dockerfile
     ports:
-        - "50001:50001"
+        - "50000:50000"
