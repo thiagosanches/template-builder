@@ -8,3 +8,4 @@ services:
       dockerfile: InterfaceBuilder.WebApi/Dockerfile
     ports:
         - "50000:50000"
+    restart: always
